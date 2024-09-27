@@ -1,13 +1,13 @@
 #' @title convert 3d points to 2d points
 #' @description \code{frh_generate_simplex_points}
-
+#' @export
 
 frh_generate_simplex_points <- function(n) {
   # 正三角形の頂点
   P1 <- c(0, 0)
   P2 <- c(1, 0)
   P3 <- c(0.5, sqrt(3)/2)
-  
+
   # 3つのセクターのブレンドに対応する2次元座標
   points <- data.frame(x = numeric(0), y = numeric(0))
   for (i in 0:n) {

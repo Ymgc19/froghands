@@ -1,5 +1,6 @@
-#' @title 
+#' @title
 #' @description \code{fhs_generate_simplex_points}
+#' @export
 
 fhs_convert_2d_to_3d <- function(x, y){
   a <- x - (1/sqrt(3))*y
